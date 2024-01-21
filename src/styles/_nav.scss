@@ -1,0 +1,19 @@
+.nav_custom {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 1;
+  padding: 0 5rem;
+  background-color: #0000001f;
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+      padding: 1rem;
+    }
+    .btn-primary {
+      color: $white;
+      padding: 1rem 2rem;
+    }
+  }
+  backdrop-filter: saturate(180%) blur(5px);
+}

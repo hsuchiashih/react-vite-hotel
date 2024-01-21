@@ -1,0 +1,33 @@
+.big_btn {
+  height: 116px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  .title {
+    position: relative;
+    margin-right: 206px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .title::after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: #000;
+    top: 1rem;
+    margin-left: 1rem;
+  }
+}
+.big_btn:hover {
+  color: $white;
+  background-color: $primary;
+  cursor: pointer;
+  .title::after {
+    background: $white;
+  }
+}
